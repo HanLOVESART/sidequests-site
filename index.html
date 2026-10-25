@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Side Quests · Plans that actually happen</title>
+<meta name="description" content="Side Quests turns your group chat into a booked plan. Pick the vibe, vote on three picks, we book it, and the bill splits itself. Launching in Riyadh.">
+<meta property="og:title" content="Side Quests">
+<meta property="og:description" content="&quot;We should go out&quot; is not a plan. This is. Join the Riyadh waitlist.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sidequestsksa.com/">
+<meta property="og:image" content="https://sidequestsksa.com/img/og.jpg">
+<meta name="theme-color" content="#0E0E10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=IBM+Plex+Sans+Arabic:wght@500;700&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0E0E10}
+a{color:#dff700}a:hover{color:#fa58a7}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+input::placeholder{color:rgba(255,255,255,0.5)}
+:focus-visible{outline:3px solid #dff700;outline-offset:3px}
+button[disabled]{opacity:.6;cursor:wait}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; background: #0E0E10; color: #ffffff; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 18px; line-height: 1.55; overflow-x: hidden">
+
+  <!-- NAV -->
+  <header style="width: 100%; box-sizing: border-box; padding: 24px 24px; display: flex; justify-content: center">
+    <nav aria-label="Main" style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #ffffff">
+        <span style="width: 40px; height: 40px; border-radius: 12px; background: #3f22ec; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #ffffff">SQ</span>
+        <span style="font-weight: 800; font-size: 19px; letter-spacing: -0.01em">Side Quests</span>
+      </a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
+        <a href="#how" style="color: rgba(255,255,255,0.75); text-decoration: none; font-weight: 600; font-size: 15px">How it works</a>
+        <a href="#venues" style="color: rgba(255,255,255,0.75); text-decoration: none; font-weight: 600; font-size: 15px">For venues</a>
+        <a href="#companies" style="color: rgba(255,255,255,0.75); text-decoration: none; font-weight: 600; font-size: 15px">For companies</a>
+        <a href="#waitlist" style="background: #dff700; color: #111111; text-decoration: none; font-weight: 800; font-size: 15px; padding: 12px 22px; border-radius: 999px">Join the waitlist</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="width: 100%; box-sizing: border-box; padding: 48px 24px 96px; display: flex; justify-content: center; background: radial-gradient(1100px 700px at 80% 0%, #1d1240 0%, #0E0E10 65%)">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+      <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <span style="border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.7)">RIYADH · COMING SOON</span>
+        </div>
+        <h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(44px, 6.4vw, 84px); line-height: 1.02; letter-spacing: -0.025em">"We should go out" is not a plan. <em style="color: #fa58a7; font-style: italic">This is.</em></h1>
+        <p dir="rtl" lang="ar" style="margin: 0; align-self: flex-start; font-family: 'IBM Plex Sans Arabic', sans-serif; font-weight: 700; font-size: 26px; color: #dff700">قول يلا، والباقي علينا.</p>
+        <p style="margin: 0; max-width: 560px; font-size: 20px; color: rgba(255,255,255,0.72)">Side Quests turns your group chat into a booked plan. Pick the vibe, vote on three picks, and we lock it in. The bill splits itself among whoever showed up.</p>
+        <form class="wl" id="waitlist-hero" novalidate style="display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 560px; ">
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; width: 100%; ">
+            <label for="hero-phone" class="sr">Phone number</label>
+            <input id="hero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Phone number (+966…)" required style="flex: 1 1 220px; min-width: 0; box-sizing: border-box; height: 56px; padding: 0 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font-family: inherit; font-size: 17px">
+            <label for="hero-email" class="sr">Email (optional)</label>
+            <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Email (optional)" style="flex: 1 1 220px; min-width: 0; box-sizing: border-box; height: 56px; padding: 0 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font-family: inherit; font-size: 17px">
+          </div>
+          <label style="display: flex; gap: 10px; align-items: flex-start; text-align: left; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.72)">
+            <input type="checkbox" name="consent" style="width: 18px; height: 18px; margin: 2px 0 0; flex: none; accent-color: #dff700">
+            <span>I agree to receive my Side Quests invite on WhatsApp, SMS or email. <a href="privacy.html">Privacy notice</a></span>
+          </label>
+          <button type="submit" style="height: 56px; padding: 0 28px; border: none; border-radius: 999px; background: #dff700; color: #111111; font-family: inherit; font-weight: 800; font-size: 17px; cursor: pointer; align-self: flex-start">Get early access</button>
+          <p class="wl-msg" role="status" aria-live="polite" style="margin: 0; min-height: 1.4em; font-size: 15px; font-weight: 700; color: #fa58a7"></p>
+        </form>
+        <p style="margin: 0; font-size: 14px; color: rgba(255,255,255,0.5)">Launching in Riyadh first. No spam, just your invite.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="width: 100%; box-sizing: border-box; padding: 96px 24px; display: flex; justify-content: center; background: #3f22ec">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+    <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+      <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.02em; max-width: 760px">Every kind of day out. <em style="color: #dff700">Planned in minutes.</em></h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <span style="background: #dff700; color: #111111; border-radius: 999px; padding: 14px 24px; font-weight: 800; font-size: 17px">Dinner Night</span>
+        <span style="background: #dff700; color: #111111; border-radius: 999px; padding: 14px 24px; font-weight: 800; font-size: 17px">Sports Day</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Wellness Day</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Home Quest</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Experience</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Adventure</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Beauty</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Focus</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Give Back</span>
+        <span style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 17px">Occasion</span>
+      </div>
+      <p style="margin: 0; font-size: 17px; color: rgba(255,255,255,0.8); max-width: 640px">Padel with the squad, a sunrise run in Wadi Hanifa, a spa day, a birthday with a surprise. If your group can do it together, it's a Side Quest.</p>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+      <img src="img/daytype.webp" alt="Side Quests app screen: What kind of day is it? with Dinner Night, Home Quest, Sports Day, Wellness Day, Beauty Day and Experience Day cards" width="340" height="736" loading="lazy" style="width: 340px; max-width: 100%; height: auto; display: block; filter: drop-shadow(0 40px 60px rgba(0,0,0,0.45))">
+    </div>
+    </div>
+  </section>
+
+  <!-- SPORTS DAY -->
+  <section id="sports" style="width: 100%; box-sizing: border-box; padding: 96px 24px; display: flex; justify-content: center; background: #0E0E10">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 56px">
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+        <img src="img/sports.webp" alt="Side Quests app screen: What are we playing? with Padel selected, plus Football, Running, Tennis, Cycling and Basketball coming soon" width="340" height="736" loading="lazy" style="width: 340px; max-width: 100%; height: auto; display: block; filter: drop-shadow(0 40px 60px rgba(0,0,0,0.6))">
+      </div>
+      <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: #dff700">SPORTS DAY</span>
+        <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.02em">Padel at nine? <em style="color: #fa58a7">Sorted.</em></h2>
+        <p style="margin: 0; font-size: 18px; color: rgba(255,255,255,0.72); max-width: 560px">Pick the sport and Side Quests finds courts and pitches with space for your whole squad. Vote, book, and split it per player.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <span style="background: #3f22ec; color: #ffffff; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Padel</span>
+          <span style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Football</span>
+          <span style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Tennis</span>
+          <span style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Running clubs</span>
+          <span style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Cycling routes</span>
+          <span style="background: transparent; color: rgba(255,255,255,0.6); border: 1px dashed rgba(255,255,255,0.3); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Basketball · soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="width: 100%; box-sizing: border-box; padding: 96px 24px; display: flex; justify-content: center; background: #FAFAFA; color: #141414">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px">
+        <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: #3f22ec">HOW IT WORKS</span>
+        <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.02em">From group chat to booked, <em style="color: #fa58a7">in one flow.</em></h2>
+      </div>
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+        <li style="background: #ffffff; border: 1px solid #e6e4ef; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Fraunces', Georgia, serif; font-size: 44px; font-weight: 600; color: #3f22ec; line-height: 1">1</span>
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Pick the vibe</h3>
+          <p style="margin: 0; font-size: 16px; color: #555555">Dinner Night, Sports Day, Wellness Day and more. Set the time, area and budget, and choose your group.</p>
+        </li>
+        <li style="background: #ffffff; border: 1px solid #e6e4ef; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Fraunces', Georgia, serif; font-size: 44px; font-weight: 600; color: #3f22ec; line-height: 1">2</span>
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Vote on three picks</h3>
+          <p style="margin: 0; font-size: 16px; color: #555555">The Classic, the Hidden Gem and the Why Not. Three good options, never three hundred. Everyone votes, the timer keeps it moving.</p>
+        </li>
+        <li style="background: #ffffff; border: 1px solid #e6e4ef; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Fraunces', Georgia, serif; font-size: 44px; font-weight: 600; color: #3f22ec; line-height: 1">3</span>
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">We book it</h3>
+          <p style="margin: 0; font-size: 16px; color: #555555">The winner gets booked inside the app, straight into the venue's own system. Everyone gets the confirmation.</p>
+        </li>
+        <li style="background: #ffffff; border: 1px solid #e6e4ef; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Fraunces', Georgia, serif; font-size: 44px; font-weight: 600; color: #3f22ec; line-height: 1">4</span>
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Split the bill</h3>
+          <p style="margin: 0; font-size: 16px; color: #555555">The bill splits among the people who actually came. Pay your share with Apple Pay or Mada, and the night lands in your Quest Journal.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DAY TYPES -->
+  
+
+  <!-- WHY -->
+  <section style="width: 100%; box-sizing: border-box; padding: 96px 24px; display: flex; justify-content: center">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 44px">
+      <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.02em; max-width: 760px">Built for how groups <em style="color: #fa58a7">actually</em> go out.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <div style="border-top: 2px solid #dff700; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">No endless scrolling</h3>
+          <p style="margin: 0; font-size: 16px; color: rgba(255,255,255,0.68)">Three curated picks that are actually bookable for your group, at your time.</p>
+        </div>
+        <div style="border-top: 2px solid #dff700; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Decided in the app</h3>
+          <p style="margin: 0; font-size: 16px; color: rgba(255,255,255,0.68)">Votes have names and a timer, so nobody reopens it in the group chat.</p>
+        </div>
+        <div style="border-top: 2px solid #dff700; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Fair splits</h3>
+          <p style="margin: 0; font-size: 16px; color: rgba(255,255,255,0.68)">Only the people who showed up pay. No chasing friends for transfers.</p>
+        </div>
+        <div style="border-top: 2px solid #dff700; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; font-weight: 800">Nights you keep</h3>
+          <p style="margin: 0; font-size: 16px; color: rgba(255,255,255,0.68)">Every quest becomes a journal entry with photos, one moment and who was there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUES -->
+  <section id="venues" style="width: 100%; box-sizing: border-box; padding: 0 24px 96px; display: flex; justify-content: center">
+    <div style="width: 100%; max-width: 1200px; box-sizing: border-box; background: #18161f; border: 1px solid rgba(255,255,255,0.1); border-radius: 36px; padding: 48px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+      <div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: #dff700">FOR VENUES</span>
+        <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; letter-spacing: -0.02em">We bring you groups, <em style="color: #fa58a7">already decided.</em></h2>
+        <p style="margin: 0; font-size: 17px; color: rgba(255,255,255,0.7)">Restaurants, courts, studios, clubs and adventure organisers: Side Quests sends you full tables and full courts, booked straight into the system you already use. No new tablet, no extra work for your team.</p>
+      </div>
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.05)">
+          <span style="font-weight: 800; font-size: 17px">Restaurants and courts</span>
+          <span style="font-size: 15px; color: rgba(255,255,255,0.65)">Connect through your booking system</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.05)">
+          <span style="font-weight: 800; font-size: 17px">Running and cycling clubs</span>
+          <span style="font-size: 15px; color: rgba(255,255,255,0.65)">List your sessions free in our vendor portal</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.05)">
+          <span style="font-weight: 800; font-size: 17px">Adventure organisers</span>
+          <span style="font-size: 15px; color: rgba(255,255,255,0.65)">Desert trips, hikes and camping: list your experiences in our vendor portal</span>
+        </div>
+        <a href="mailto:han@hobagency.com?subject=Side%20Quests%20venue%20partnership" style="align-self: flex-start; background: #ffffff; color: #111111; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 24px; border-radius: 999px">Partner with us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANIES -->
+  <section id="companies" style="width: 100%; box-sizing: border-box; padding: 0 24px 96px; display: flex; justify-content: center">
+    <div style="width: 100%; max-width: 1200px; box-sizing: border-box; background: #fa58a7; color: #141414; border-radius: 36px; padding: 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+      <div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: #141414">FOR COMPANIES</span>
+        <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Team outings your people actually want.</h2>
+        <p style="margin: 0; font-size: 17px; color: #2a1020">Teams vote on the plan, Side Quests books it, and HR sees participation in one dashboard.</p>
+      </div>
+      <a href="mailto:han@hobagency.com?subject=Side%20Quests%20for%20companies" style="background: #141414; color: #ffffff; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 26px; border-radius: 999px">Talk to us</a>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section id="waitlist" style="width: 100%; box-sizing: border-box; padding: 96px 24px; display: flex; justify-content: center; background: radial-gradient(900px 500px at 50% 100%, #1d1240 0%, #0E0E10 70%)">
+    <div style="width: 100%; max-width: 760px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+      <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(40px, 5vw, 68px); line-height: 1.02; letter-spacing: -0.025em">Your next side quest <em style="color: #dff700">starts here.</em></h2>
+      <p style="margin: 0; font-size: 19px; color: rgba(255,255,255,0.7)">Be first in Riyadh. Bring your group.</p>
+      <form class="wl" id="waitlist-bottom" novalidate style="display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 560px; align-items: center; text-align: center;">
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; width: 100%; justify-content: center;">
+            <label for="bottom-phone" class="sr">Phone number</label>
+            <input id="bottom-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Phone number (+966…)" required style="flex: 1 1 220px; min-width: 0; box-sizing: border-box; height: 56px; padding: 0 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font-family: inherit; font-size: 17px">
+            <label for="bottom-email" class="sr">Email (optional)</label>
+            <input id="bottom-email" name="email" type="email" autocomplete="email" placeholder="Email (optional)" style="flex: 1 1 220px; min-width: 0; box-sizing: border-box; height: 56px; padding: 0 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font-family: inherit; font-size: 17px">
+          </div>
+          <label style="display: flex; gap: 10px; align-items: flex-start; text-align: left; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.72)">
+            <input type="checkbox" name="consent" style="width: 18px; height: 18px; margin: 2px 0 0; flex: none; accent-color: #dff700">
+            <span>I agree to receive my Side Quests invite on WhatsApp, SMS or email. <a href="privacy.html">Privacy notice</a></span>
+          </label>
+          <button type="submit" style="height: 56px; padding: 0 28px; border: none; border-radius: 999px; background: #dff700; color: #111111; font-family: inherit; font-weight: 800; font-size: 17px; cursor: pointer; align-self: center">Get early access</button>
+          <p class="wl-msg" role="status" aria-live="polite" style="margin: 0; min-height: 1.4em; font-size: 15px; font-weight: 700; color: #fa58a7"></p>
+        </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="width: 100%; box-sizing: border-box; padding: 32px 24px 40px; display: flex; justify-content: center; border-top: 1px solid rgba(255,255,255,0.08)">
+    <div style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 14px; color: rgba(255,255,255,0.55)">
+      <span>© 2026 Side Quests · Riyadh</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <a href="mailto:han@hobagency.com" style="color: rgba(255,255,255,0.75); text-decoration: none">han@hobagency.com</a>
+        <a href="privacy.html" style="color: rgba(255,255,255,0.75); text-decoration: none">Privacy notice</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfWJS5TFV_Zcpv1tiaJLWZYt6Z-9CVr0bubWsiKTwsZiHTHtg/formResponse';
+  document.querySelectorAll('form.wl').forEach(function(f){
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      var msg = f.querySelector('.wl-msg'), btn = f.querySelector('button');
+      var phone = f.phone.value.trim(), email = f.email.value.trim();
+      if (phone.replace(/\D/g,'').length < 9) { msg.textContent = 'Add a valid phone number.'; f.phone.focus(); return; }
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = 'That email doesn\u2019t look right.'; f.email.focus(); return; }
+      if (!f.consent.checked) { msg.textContent = 'Tick the box so we can send your invite.'; return; }
+      var d = new URLSearchParams();
+      d.append('entry.1584377408', phone);
+      d.append('entry.178112627', email);
+      d.append('entry.796606220', 'Yes');
+      btn.disabled = true; msg.textContent = '';
+      fetch(ACTION, { method: 'POST', mode: 'no-cors', body: d }).then(function(){
+        f.innerHTML = '<p style="margin:0;font-size:20px;font-weight:800;color:#dff700">You\u2019re on the list. Your invite comes on WhatsApp \u2728</p>';
+      }).catch(function(){
+        btn.disabled = false; msg.textContent = 'Couldn\u2019t send. Check your connection and try again.';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
